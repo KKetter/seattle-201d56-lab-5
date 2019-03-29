@@ -28,9 +28,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  var c = a * b;
-  return[c, 'The product of ' + a + ' and ' + b + ' is '+ c +'.'];
-}
+  
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -50,7 +48,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  sum(sum(a,b),c);
+  multiply(multiply(a,b),c);
+  return[, 'The product of ' + a + ' and ' + b + ' is '+ c +'.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it

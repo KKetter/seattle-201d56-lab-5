@@ -136,9 +136,8 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   for (let index = 0; index < dynamicArray.length; index++){
     total = multiply(dynamicArray[index], total)[0];
   }
-  console.log('output: ', 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ',' + testArray[3] + ',' + testArray[4] + ',' + testArray[2] + ' have a product of ' + total + '.');
-
-  return[total,'The numbers ' + testDynamicArray[0] + ',' + testDynamicArray[1] + ',' + testDynamicArray[2] + ',' + testDynamicArray[3] + ',' + testDynamicArray[4] + ' have a product of ' + total + '.'];
+  console.log('text output: ', 'The numbers ' + testDynamicArray[0] + ',' + testDynamicArray[1] + ',' + testDynamicArray[2] + ',' + testDynamicArray[3] + ',' + testDynamicArray[4] + ' have a product of ' + total + '.');
+  return[total,'The numbers ' + testDynamicArray + ' have a product of ' + total + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
